@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        int[] arr = new int[101];
+        long[] arr = new long[101];
         arr[1] = 1;
         arr[2] = 1;
         arr[3] = 1;
@@ -18,7 +18,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         for(int i = 0 ; i <t;i++){
             int n = sc.nextInt();
-            sb.append(n+"\n");
+            sb.append(arr[n]+"\n");
         }
         System.out.println(sb.toString());
         sc.close();
