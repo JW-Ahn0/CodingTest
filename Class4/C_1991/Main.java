@@ -28,8 +28,6 @@ public class Main {
                 map.get(element).setRight(map.get(right));
             }
         }
-        
-        boolean[] visited = new boolean[n];
         preOrder(root);
         System.out.println();
         inOrder(root);
