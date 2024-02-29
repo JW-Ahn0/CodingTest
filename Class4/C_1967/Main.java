@@ -1,6 +1,6 @@
 package Class4.C_1967;
 
-import java.util.Scanner;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
