@@ -1,15 +1,9 @@
-package SWExpertAcademy.Java.D1.D1_0000;
+package SWExpertAcademy.Java.D1.D1_1936;
 
 import java.util.Scanner;
-import java.io.FileInputStream;
 
-/*
-   사용하는 클래스명이 Solution 이어야 하므로, 가급적 Solution.java 를 사용할 것을 권장합니다.
-   이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해볼 수 있습니다.
- */
 class Solution
 {
-    
 	public static void main(String args[]) throws Exception
 	{
 		/*
@@ -25,19 +19,27 @@ class Solution
 		   표준입력 System.in 으로부터 스캐너를 만들어 데이터를 읽어옵니다.
 		 */
 		Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int answer = 0 ;
-        if(a>=b){
-            answer = a-b+1;
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        boolean isAWin = true;
+        // A == 가위
+        if(A==1){
+            isAWin = B == 2 ? false : true ;
+        }
+        // A == 바위
+        else if(A ==2){
+            isAWin = B == 1? true : false;
+        }
+        // A == 보 
+        else if(A==3){
+            isAWin = B == 1 ? false : true ;
+        }
+        if(isAWin){
+            System.out.println("A");
         }
         else{
-            answer = 999-b+1+ a+1;
+            System.out.println("B");
         }
-        System.out.println(answer);
-		/*
-		   여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
-		*/
         sc.close();
 	}
 }
