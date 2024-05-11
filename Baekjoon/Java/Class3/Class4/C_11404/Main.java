@@ -24,6 +24,7 @@ public class Main {
     static boolean[] visited; 
     static StringBuilder sb = new StringBuilder();
     static int n;
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         

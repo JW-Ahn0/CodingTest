@@ -18,6 +18,7 @@ public class Main {
     static int answer;
     static List<Node>[] list;
     static boolean[] visited;
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws NumberFormatException, IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());

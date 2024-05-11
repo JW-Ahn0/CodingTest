@@ -6,10 +6,9 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        int H,W,N;
+        int H,N;
         for(int i = 0 ; i < t;i++){
             H =  sc.nextInt();
-            W =  sc.nextInt();
             N =  sc.nextInt();
             int number; 
             int floor; 

@@ -13,6 +13,7 @@ public class Main {
     }
     static List<Node>[] list;
     static int n;
+    @SuppressWarnings("unchecked")
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();

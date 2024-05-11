@@ -21,6 +21,7 @@ public class Main {
     static int n;
     static int m;
     static int x;
+    @SuppressWarnings("unchecked")
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
